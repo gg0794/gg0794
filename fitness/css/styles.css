@@ -166,6 +166,40 @@ article:nth-of-type(2){
     width: 95%;
     height: 50%;
 }
+
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
 /* styles rules for footer*/
 footer p{
     font-size: 0.75em ;
@@ -251,6 +285,35 @@ footer p a{
         width: 600px;
         height: 450px;
     }
+
+    /*Stlye rules for table:table viewport*/
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td{
+        border: 1px solid #000;
+        padding: 2%;
+    }
+
+    tr:nth-child(odd){
+        background-color: #ccc;
+    }
+
+    /*tablet viewpirt: style rule for form element*/
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 /*media query for desktop viewpoint*/
 @media screen and (min-width: 1015px), print {
@@ -308,6 +371,20 @@ footer p a{
     #exercises{
         clear: left;
     }
+
+form {
+    width: auto;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.btn{
+    grid-column: 1 / span 3;
+}
 }
 /*Media query for large desktop viewports*/
 @media screen and (min-width: 1921px){
@@ -315,6 +392,10 @@ footer p a{
     #container{
         width: 1920px;
         margin: 0 auto;
+    }
+
+    table {
+        width: 80%;
     }
 }
 /*media query for print*/
